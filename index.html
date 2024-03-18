@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Зоопарк на дому</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div>
+                <h1>Сайт зоопарка</h1>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Список животных</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section>
+        <article>
+            <div>
+                <h3>Животные</h3>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Имя</th>
+                        <th>Возраст</th>
+                        <th>Должность</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Лея</td>
+                        <td>3</td>
+                        <td>Кошка</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Цири</td>
+                        <td>0.7</td>
+                        <td>Кошка</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+    <section>
+        <div>
+            <h3>Добавить животное(не надо, пожалуйста, нам хватит)</h3>
+        </div>
+        <div>
+            <form method="POST" action="#">
+                <div>
+                    <input type="text" name="name" placeholder="name">
+                </div>
+                <div>
+                    <input type="number" name="age" placeholder="age">
+                </div>
+                <div>
+                    <select name="position" >
+                        <option disabled selected>Выберите должность</option>
+                        <option value="1">Собака</option>
+                        <option value="2">Кошка</option>
+                        <option value="3">Рыба</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="add"
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
