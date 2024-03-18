@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+.main {
+    width: 1440px;
+    height: 930px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.TopNav {
+    width: 1360px;
+    height: 31px;
+    position: fixed;
+    margin: 20px 40px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation_main {
+    width: 525px;
+    height: 31px;
+    left: 303px;
+}
+
+.logo {
+    width: 25%;
+}
+
+.navigation_main_elements {
+    display: flex;
+    gap: 42px;
+}
+
+.navigation_main_elements_element {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navigation_button {
+    width: 122px;
+    height: 24px;
+    left: 1270px;
+    gap: 25px;
+    display: flex;
+}
+
+.nav_left {
+    position: fixed;
+    top: 71px;
+    width: 78px;
+    height: 859px;
+}
+
+.socials {
+    display: inline-block;
+    margin: 87px 32px;
+    bottom: 0;
+    position: fixed;
+    align-items: flex-end;
+
+}
+
+.socials_elements {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.a:hover {
+    color: #000;
+}
+
+.a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.a:hover::before {
+    transform: scaleX(1);
+}
+
+
+.content {
+    width: 1362px;
+    height: 859px;
+    display: flex;
+    position: fixed;
+    top: 71px;
+    left: 78px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_text {
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+}
+
+.main_text {
+    margin: 20px 0;
+}
+
+.h2 {
+   font-size: 50px;
+}
+
+.h1 {
+    font-size: 100px;
+}
+
+.h1 span {
+    color: blueviolet;
+}
+
+.descriptions {
+    font-size: 30px;
+}
+
+.photo {
+    width: 40%;
+}
+
+.img {
+    width: 550px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.img:hover {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+
+
+.custom-btn {
+    width: 230px;
+    height: 80px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-8 span {
+    position: relative;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+.btn-8:before{
+    height: 0%;
+    width: 2px;
+}
+.btn-8:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-8:hover:before {
+    height: 100%;
+}
+.btn-8:hover:after {
+    width: 100%;
+}
+.btn-8:hover{
+    background: transparent;
+}
+.btn-8 span:hover{
+    color: #c797eb;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #c797eb;
+    transition: all 0.3s ease;
+}
+.btn-8 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-8 span:after {
+    height: 2px;
+    width: 0%;
+}
+.btn-8 span:hover:before {
+    height: 100%;
+}
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+.button {
+    margin: 30px 0;
+}
